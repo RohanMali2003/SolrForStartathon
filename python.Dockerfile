@@ -4,14 +4,11 @@ FROM python:3.9-slim
 # Set the working directory
 WORKDIR /app
 
-# Copy Python app files
+# Copy the Python app
 COPY python-app /app
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
-# Expose necessary ports (if any)
-EXPOSE 5000  # Adjust based on your app's needs
-
-# Run the Python script
-CMD ["python3", "solr_connector.py"]
+# Run the Python script with the correct input file
+CMD ["python3", "/app/solr_connector.py", "/app/inputs.txt"]

@@ -5,4 +5,4 @@ FROM solr:8.11.2
 EXPOSE 8983
 
 # Start Solr when the container starts
-CMD solr-foreground & python3 /python-app/solr_connector.py
+CMD ["solr-foreground"]

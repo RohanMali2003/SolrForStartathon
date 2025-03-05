@@ -9,14 +9,9 @@
         },
         {
             "name": "python-app",
-            "env": "python",
             "build": {
-                "railpackConfig": {
-                    "installCommand": "pip install -r python-app/requirements.txt"
-                }
-            },
-            "runCommand": "python python-app/solr_connector.py",
-            "dockerfile": "python.Dockerfile"
+                "dockerfile": "python.Dockerfile"
+            }
         }
     ]
 }

@@ -1,14 +1,17 @@
 # Use an official Python image
 FROM python:3.9-slim
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy your Python app
+# Copy Python app files
 COPY python-app /app
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Run your Python script
-CMD ["python", "solr_connector.py"]
+# Expose necessary ports (if any)
+EXPOSE 5000  # Adjust based on your app's needs
+
+# Run the Python script
+CMD ["python3", "solr_connector.py"]

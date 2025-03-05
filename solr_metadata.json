@@ -1,0 +1,101 @@
+{
+    "type": "apache_solr",
+    "data": {
+        "CoreName": "my_core",
+        "SizeofIndex": 7220,
+        "NumberofDocuments": 5,
+        "Index": [
+            {
+                "IndexName": "my_core",
+                "Documents": [
+                    {
+                        "document_id": "3",
+                        "fieldTypes": [
+                            {
+                                "fieldName": "title",
+                                "value": [
+                                    "The Godfather"
+                                ]
+                            },
+                            {
+                                "fieldName": "director",
+                                "value": [
+                                    "Francis Ford Coppola"
+                                ]
+                            },
+                            {
+                                "fieldName": "genre",
+                                "value": "Crime"
+                            },
+                            {
+                                "fieldName": "release_year",
+                                "value": 1972
+                            },
+                            {
+                                "fieldName": "rating",
+                                "value": 9.2
+                            },
+                            {
+                                "fieldName": "cast",
+                                "value": [
+                                    "Marlon Brando",
+                                    "Al Pacino",
+                                    "James Caan"
+                                ]
+                            },
+                            {
+                                "fieldName": "description",
+                                "value": [
+                                    "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "document_id": "2",
+                        "fieldTypes": [
+                            {
+                                "fieldName": "title",
+                                "value": [
+                                    "The Matrix"
+                                ]
+                            },
+                            {
+                                "fieldName": "director",
+                                "value": [
+                                    "Lana Wachowski, Lilly Wachowski"
+                                ]
+                            },
+                            {
+                                "fieldName": "genre",
+                                "value": "Action"
+                            },
+                            {
+                                "fieldName": "release_year",
+                                "value": 1999
+                            },
+                            {
+                                "fieldName": "rating",
+                                "value": 8.7
+                            },
+                            {
+                                "fieldName": "cast",
+                                "value": [
+                                    "Keanu Reeves",
+                                    "Laurence Fishburne",
+                                    "Carrie-Anne Moss"
+                                ]
+                            },
+                            {
+                                "fieldName": "description",
+                                "value": [
+                                    "A hacker learns about the true nature of reality and his role in the war against its controllers."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

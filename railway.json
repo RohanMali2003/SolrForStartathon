@@ -15,7 +15,8 @@
                     "installCommand": "pip install -r python-app/requirements.txt"
                 }
             },
-            "runCommand": "sleep 10 && python3 python-app/solr_connector.py"
+            "runCommand": "python python-app/solr_connector.py",
+            "dockerfile": "python.Dockerfile"
         }
     ]
 }

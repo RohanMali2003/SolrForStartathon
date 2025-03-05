@@ -54,7 +54,7 @@ The script will generate a `solr_metadata.json` file containing:
 ## Output Format
 
 The generated JSON follows this structure:
-
+```json
 {
     "type": "apache_solr",
     "data": {
@@ -79,7 +79,7 @@ The generated JSON follows this structure:
         ]
     }
 }
-
+```
 
 ## API Details
 

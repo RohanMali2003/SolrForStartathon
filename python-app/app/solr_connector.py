@@ -7,8 +7,10 @@ import sys
 Read user inputs from file.
 Solr Connection details.
 '''
+inputs = None
 
 def read_solr_inputs(filepath="inputs.txt"):
+
     inputs = {
 
     }
@@ -29,20 +31,20 @@ def read_solr_inputs(filepath="inputs.txt"):
     return inputs
 
 
-def is_valid_input(inputs):
+def is_valid_input(inputs = inputs):
     return ("hostname" in inputs and "portnumber" in inputs and "corename" in inputs)
 
 
 
 # construct solr url with the given inputs
-def get_solr_url(inputs):
+def get_solr_url(inputs = inputs):
     return f"http://{inputs['hostname']}:{inputs['portnumber']}/solr/{inputs['corename']}"
     
 
 """
 Fetche core metadata including core name, index size, and document count.
 """
-def get_core_metadata(inputs):
+def get_core_metadata(inputs = inputs):
 
     solr_url = f"http://{inputs['hostname']}:{inputs['portnumber']}/solr/admin/cores?action=STATUS&wt=json" 
 
@@ -68,7 +70,7 @@ def get_core_metadata(inputs):
 """
 Retrieves 2 randomly selected documents from Solr, extracting first-level keys only.
 """
-def get_random_documents(inputs):
+def get_random_documents(inputs = inputs):
 
     solr_url = f"{get_solr_url(inputs)}/select"
     params = {

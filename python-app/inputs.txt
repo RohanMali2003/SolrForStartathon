@@ -1,4 +1,4 @@
-hostname=localhost
+hostname=192.168.23.35
 portnumber=8983
 corename=my_core
 username=admin

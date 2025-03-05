@@ -1,0 +1,101 @@
+{
+    "type": "apache_solr",
+    "data": {
+        "CoreName": "my_core",
+        "SizeofIndex": 7220,
+        "NumberofDocuments": 5,
+        "Index": [
+            {
+                "IndexName": "my_core",
+                "Documents": [
+                    {
+                        "document_id": "1",
+                        "fieldTypes": [
+                            {
+                                "fieldName": "title",
+                                "value": [
+                                    "Inception"
+                                ]
+                            },
+                            {
+                                "fieldName": "director",
+                                "value": [
+                                    "Christopher Nolan"
+                                ]
+                            },
+                            {
+                                "fieldName": "genre",
+                                "value": "Science Fiction"
+                            },
+                            {
+                                "fieldName": "release_year",
+                                "value": 2010
+                            },
+                            {
+                                "fieldName": "rating",
+                                "value": 8.8
+                            },
+                            {
+                                "fieldName": "cast",
+                                "value": [
+                                    "Leonardo DiCaprio",
+                                    "Joseph Gordon-Levitt",
+                                    "Elliot Page"
+                                ]
+                            },
+                            {
+                                "fieldName": "description",
+                                "value": [
+                                    "A thief who enters the dreams of others to steal secrets must plant an idea into a target's subconscious."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "document_id": "5",
+                        "fieldTypes": [
+                            {
+                                "fieldName": "title",
+                                "value": [
+                                    "Parasite"
+                                ]
+                            },
+                            {
+                                "fieldName": "director",
+                                "value": [
+                                    "Bong Joon-ho"
+                                ]
+                            },
+                            {
+                                "fieldName": "genre",
+                                "value": "Thriller"
+                            },
+                            {
+                                "fieldName": "release_year",
+                                "value": 2019
+                            },
+                            {
+                                "fieldName": "rating",
+                                "value": 8.6
+                            },
+                            {
+                                "fieldName": "cast",
+                                "value": [
+                                    "Song Kang-ho",
+                                    "Lee Sun-kyun",
+                                    "Cho Yeo-jeong"
+                                ]
+                            },
+                            {
+                                "fieldName": "description",
+                                "value": [
+                                    "A poor family schemes to become employed by a wealthy family by infiltrating their household."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

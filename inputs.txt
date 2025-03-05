@@ -1,0 +1,5 @@
+hostname=localhost
+portnumber=8983
+corename=my_core
+username=admin
+password=secret

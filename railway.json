@@ -4,17 +4,18 @@
             "name": "solr",
             "build": {
                 "dockerfile": "Dockerfile"
-            }
+            },
+            "runCommand": "solr-foreground"
         },
         {
             "name": "python-app",
             "env": "python",
             "build": {
-                "nixpacksConfig": {
+                "railpackConfig": {
                     "installCommand": "pip install -r python-app/requirements.txt"
                 }
             },
-            "runCommand": "python3 python-app/solr_connector.py"
+            "runCommand": "sleep 10 && python3 python-app/solr_connector.py"
         }
     ]
 }

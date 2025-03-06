@@ -67,7 +67,7 @@ def get_random_documents(inputs):
 
     solr_url = f"{get_solr_url(inputs)}/select"
     params = {
-        "q": "*:*",
+        "q": ":",
         "rows": 2,  # Fetch 2 random documents
         "fl": "*",
         "wt": "json",
@@ -92,7 +92,11 @@ def get_random_documents(inputs):
             }
 
             for key, value in doc.items():
+<<<<<<< HEAD
                 if key == "id" or key == "_root_" or key == "_version_":   
+=======
+                if key == "id" or key == "root" or key == "version":   
+>>>>>>> dabcda18e9f9231a055b76830c56eb9c6c3934fb
                     continue  # Skip ID field, root, and version. 
                 
                 field_entry = {"fieldName": key, "value": value}
@@ -135,5 +139,9 @@ def main():
     print("Solr metadata saved")
 
 
+<<<<<<< HEAD
 if __name__ == "__main__":
+=======
+if _name_ == "_main_":
+>>>>>>> dabcda18e9f9231a055b76830c56eb9c6c3934fb
     main()
